@@ -18,7 +18,6 @@ For a demo goto https://harlyq.github.io/aframe-sprite-particles-component/
 </head>
 <body>
   <a-scene>
-    <a-gltf-model id="model" texture="assets/blob.png" scale="0.5 0.5 0.5" visible="false"></a-gltf-model>
     <a-entity position="0 5 -5" sprite-particles="texture: url(assets/blob.png); velocity: .1 1 .1; acceleration: 0 -1 0..0 -2 0; color: red,yellow"></a-entity>
     <a-entity position="0 0 -5" sprite-particles="radialVelocity: 1..2; color: red"></a-entity>
   </a-scene>
