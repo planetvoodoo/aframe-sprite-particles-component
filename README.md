@@ -1,6 +1,6 @@
 # aframe-sprite-particles-component
 
-Forked by AJ at Planet Voodoo, with fixes from the godfather of particle engines Professor Lee Stemkoski.
+Forked by Planet Voodoo, with fixes from Professor Lee Stemkoski.
 
 The **sprite-particles** component uses shader based points geometry to create a set of particles from texture billboards (camera facing textures).  The particles start spawning once the component is created, and will continue until the **duration** expires. Properties can be used to define the position, velocity, acceleration, color, scale and rotation of the particles.
 
