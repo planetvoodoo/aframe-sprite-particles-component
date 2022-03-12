@@ -1,5 +1,6 @@
 // Copyright 2018 harlyq
-// Fixed with help from Professor Lee Stemkoski to work with A-Frame v1.3.0
+// Planet Voodoo Fork
+// Fixed for A-Frame v1.3.0 with help from Professor Lee Stemkoski
 // License MIT
 
 (function() {
