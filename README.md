@@ -1,12 +1,12 @@
 # aframe-sprite-particles-component
 
-[Examples](#examples) - [Values](#values) - [Properties](#properties) - [Limitations](#limitations) - [Transparency](#transparency)
+Forked by Planet Voodoo with fixes from Professor Lee Stemkoski.
 
 The **sprite-particles** component uses shader based points geometry to create a set of particles from texture billboards (camera facing textures).  The particles start spawning once the component is created, and will continue until the **duration** expires. Properties can be used to define the position, velocity, acceleration, color, scale and rotation of the particles.
 
 The component also supports trails of particles or ribbons.
 
-For a demo goto https://planetvoodoo.github.io/aframe-sprite-particles-component/
+Demo: https://planetvoodoo.github.io/aframe-sprite-particles-component/
 
 ![Screenshot](assets/screenshot.jpg)
 
