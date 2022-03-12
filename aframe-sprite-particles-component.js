@@ -1,4 +1,5 @@
 // Copyright 2018 harlyq
+// Fixed with help from Professor Lee Stemkoski to work with A-Frame v1.3.0
 // License MIT
 
 (function() {
