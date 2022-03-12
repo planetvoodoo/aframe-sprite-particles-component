@@ -161,8 +161,10 @@
           <a-text value="random frames" mixin="label"></a-text>
         </a-entity>
         <a-entity position="8 -8 0">
-          <a-obj-model id="house" scale="0.02 0.02 0.02" src="assets/house/House.obj" visible="false"></a-obj-model>
-          <a-entity rotation="0 180 0" position="3 -0.5 0" sprite-particles="model: #house; modelFill: triangle; texture: #blob; spawnRate: 400; lifeTime: 5; particleSize: 10"></a-entity>
+          <a-entity gltf-model="url(https://cdn.glitch.global/38c400aa-3f97-4641-8fca-e621d9243f5e/whey.glb?v=1647019584750)"
+                    id="whey" scale="0.02 0.02 0.02" visible="false">
+          </a-entity>
+          <a-entity rotation="0 180 0" position="3 -0.5 0" sprite-particles="model: #whey; modelFill: triangle; texture: #blob; spawnRate: 400; lifeTime: 5; particleSize: 10"></a-entity>
           <a-text value="model triangle" mixin="label"></a-text>
         </a-entity>
         <a-entity position="12 -12 0">
