@@ -6,7 +6,7 @@ The **sprite-particles** component uses shader based points geometry to create a
 
 The component also supports trails of particles or ribbons.
 
-For a demo goto https://harlyq.github.io/aframe-sprite-particles-component/
+For a demo goto https://planetvoodoo.github.io/aframe-sprite-particles-component/
 
 ![Screenshot](assets/screenshot.jpg)
 
