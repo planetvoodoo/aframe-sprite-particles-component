@@ -7,11 +7,11 @@
   <body>
     <a-scene background="color: black">
       <a-assets>
-        <img id="arrow" src="assets/arrow.png">
-        <img id="blob" src="assets/blob.png">
-        <img id="raindash" src="assets/raindash.png">
-        <img id="tree" src="assets/tree.png">
-        <img id="texturegrid1024" src="assets/numbered_8x8_1024x1024.jpg">
+        <img id="arrow" src="url(assets/arrow.png)">
+        <img id="blob" src="url(assets/blob.png)">
+        <img id="raindash" src="url(assets/raindash.png)">
+        <img id="tree" src="url(assets/tree.png)">
+        <img id="texturegrid1024" src="url(assets/numbered_8x8_1024x1024.jpg)">
         <a-mixin id="label" text="align: center; width: 10" position="0 -1.5 0"></a-mixin>
       </a-assets>
       <a-entity position="0 0 -19">
@@ -36,52 +36,52 @@
           <a-text value="rainfall" mixin="label"></a-text>
         </a-entity>
         <a-entity position="8 0 0">
-          <a-entity sprite-particles="texture: assets/blob.png; color: #ccc; blending: normal; position: -1 1 -1..1 1 1; spawnRate: 10; velocity: .1 -.7 .1..0.1 -.3 .1; angularVelocity: -4 0 -4..4 0 4; lifeTime: 4; "></a-entity>
+          <a-entity sprite-particles="texture: #blob; color: #ccc; blending: normal; position: -1 1 -1..1 1 1; spawnRate: 10; velocity: .1 -.7 .1..0.1 -.3 .1; angularVelocity: -4 0 -4..4 0 4; lifeTime: 4; "></a-entity>
           <a-text value="snowfall" mixin="label"></a-text>
         </a-entity>
         <a-entity position="0 4 0">
-          <a-entity sprite-particles="texture: assets/blob.png; color: yellow, red; spawnRate: 200; spawnType: burst; radialVelocity: 2..4; radialAcceleration: -2; lifeTime: .5; scale: 1; particleSize: 25"></a-entity>
+          <a-entity sprite-particles="texture: #blob; color: yellow, red; spawnRate: 200; spawnType: burst; radialVelocity: 2..4; radialAcceleration: -2; lifeTime: .5; scale: 1; particleSize: 25"></a-entity>
           <a-text value="fireworks" mixin="label"></a-text>
         </a-entity>
         <a-entity position="-4 4 0">
-          <a-entity sprite-particles="texture: assets/blob.png; color: yellow, red; spawnRate: 200; spawnType: burst; radialVelocity: 2..4; radialAcceleration: -2; lifeTime: .5; scale: 1,.2; particleSize: 25; direction: backward"></a-entity>
+          <a-entity sprite-particles="texture: #blob; color: yellow, red; spawnRate: 200; spawnType: burst; radialVelocity: 2..4; radialAcceleration: -2; lifeTime: .5; scale: 1,.2; particleSize: 25; direction: backward"></a-entity>
           <a-text value="fireworks + backwards" mixin="label"></a-text>
         </a-entity>
         <a-entity position="-8 4 0">
-          <a-entity sprite-particles="texture: assets/explosion_sheet.png; textureFrame: 5 5; radialType: sphere; radialPosition: .1; spawnRate: 20; lifeTime: 1; scale: 12"></a-entity>
+          <a-entity sprite-particles="texture: url(assets/explosion_sheet.png); textureFrame: 5 5; radialType: sphere; radialPosition: .1; spawnRate: 20; lifeTime: 1; scale: 12"></a-entity>
           <a-text value="more frames" mixin="label"></a-text>
         </a-entity>
         <a-entity position="-12 4 0">
-          <a-entity sprite-particles="texture: assets/fog.png; position: -1 0 -1..1 0 1; velocity: -.1 -.05 -.1 .. .1 .05 .1; spawnRate: 5; lifeTime: 10; scale: 5,8; opacity: 0,1,0; rotation: 0..360"></a-entity>
+          <a-entity sprite-particles="texture: url(assets/fog.png); position: -1 0 -1..1 0 1; velocity: -.1 -.05 -.1 .. .1 .05 .1; spawnRate: 5; lifeTime: 10; scale: 5,8; opacity: 0,1,0; rotation: 0..360"></a-entity>
           <a-text value="fog" mixin="label"></a-text>
         </a-entity>
         <a-entity position="4 4 0">
-          <a-entity sprite-particles="texture: assets/fog.png; velocity: .1 1 -.1..0.3 1 .1; position: 0 -1 0; lifeTime: 4; scale: 2,6; opacity: 0,1,0; color: #aaa,#222; rotation: -120..120"></a-entity>
+          <a-entity sprite-particles="texture: url(assets/fog.png); velocity: .1 1 -.1..0.3 1 .1; position: 0 -1 0; lifeTime: 4; scale: 2,6; opacity: 0,1,0; color: #aaa,#222; rotation: -120..120"></a-entity>
           <a-text value="smoke" mixin="label"></a-text>
         </a-entity>
         <a-entity position="8 4 0">
-          <a-entity sprite-particles="texture: assets/fireworks_sheet.png; textureFrame: 5 5; spawnRate: .3; lifeTime: 2; scale: 15"></a-entity>
+          <a-entity sprite-particles="texture: url(assets/fireworks_sheet.png)url(; textureFrame: 5 5; spawnRate: .3; lifeTime: 2; scale: 15"></a-entity>
           <a-text value="frames" mixin="label"></a-text>
         </a-entity>
         <a-entity position="0 8 0">
-          <a-entity sprite-particles="texture: assets/blob.png; spawnRate: 1000; spawnType: burst; radialVelocity: .3; lifeTime: 3; scale: .1,.5; color: violet"></a-entity>
+          <a-entity sprite-particles="texture: #blob; spawnRate: 1000; spawnType: burst; radialVelocity: .3; lifeTime: 3; scale: .1,.5; color: violet"></a-entity>
           <a-text value="burst mode" mixin="label"></a-text>
         </a-entity>
         <a-entity position="-4 8 0">
-          <a-entity sprite-particles="texture: assets/blob.png; spawnRate: 100; radialVelocity: 0.4; lifeTime: 3; angularVelocity: 0 0 60..0 0 180; frustumCulled: true"></a-entity>
+          <a-entity sprite-particles="texture: #blob; spawnRate: 100; radialVelocity: 0.4; lifeTime: 3; angularVelocity: 0 0 60..0 0 180; frustumCulled: true"></a-entity>
           <a-text value="rotating" mixin="label"></a-text>
         </a-entity>
         <a-entity position="-8 8 0">
-          <a-entity sprite-particles="texture: assets/blob.png; spawnRate: 100; lifeTime: 3; radialType: sphere; radialPosition: 1; color: black..white; scale: 0,2,0"></a-entity>
+          <a-entity sprite-particles="texture: #blob; spawnRate: 100; lifeTime: 3; radialType: sphere; radialPosition: 1; color: black..white; scale: 0,2,0"></a-entity>
           <a-text value="multicolor" mixin="label"></a-text>
         </a-entity>
         <a-entity position="-12 8 0">
           <a-sphere color="#040" segments-width="32" segments-height="32" radius="1"></a-sphere>
-          <a-entity sprite-particles="texture: assets/blob.png; color: green; spawnRate: 100; radialType: sphere; radialPosition: 1; radialVelocity: .5; radialAcceleration: -2; scale: .1..2"></a-entity>
+          <a-entity sprite-particles="texture: #blob; color: green; spawnRate: 100; radialType: sphere; radialPosition: 1; radialVelocity: .5; radialAcceleration: -2; scale: .1..2"></a-entity>
           <a-text value="green blob" mixin="label"></a-text>
         </a-entity>
         <a-entity position="4 8 0">
-          <a-entity sprite-particles="texture: assets/blob.png; spawnRate: 300; radialPosition: 1; acceleration: 0 2 0; color: orange"></a-entity>
+          <a-entity sprite-particles="texture: #blob; spawnRate: 300; radialPosition: 1; acceleration: 0 2 0; color: orange"></a-entity>
           <a-text value="acceleration" mixin="label"></a-text>
         </a-entity>
         <a-entity position="8 8 0">
@@ -89,14 +89,14 @@
           <a-text value="sparkler" mixin="label"></a-text>
         </a-entity>
         <a-entity position="-4 -4 0">
-          <a-entity sprite-particles="texture: assets/blob.png; lifeTime: 0..5; radialType: sphere; radialPosition: .5; scale: 5; color: blue; blending: additive"></a-entity>
+          <a-entity sprite-particles="texture: #blob; lifeTime: 0..5; radialType: sphere; radialPosition: .5; scale: 5; color: blue; blending: additive"></a-entity>
           <a-plane color="red" position="0 0 -1"></a-plane>
           <a-text value="additive blending" mixin="label"></a-text>
         </a-entity>
         <a-entity id="bonfire" position="-8 -4 0">
           <a-entity position="0 -0.6 0"
-            sprite-particles__smoke="texture: assets/fog.png; velocity: -.1 1 -.3.. .3 1 .3; spawnRate: 12; lifeTime: 4; scale: 4,8; opacity: 0,1,0; color: #666,#222; rotation: -120..120"
-            sprite-particles__fire="texture: assets/explosion_sheet.png; textureFrame: 5 5; velocity: .2 .1 -.2.. .6 .1 .2; acceleration: 0 1 0..0 3 0; spawnRate: 15; scale: 2..4,6..8; opacity: 1,0; angularVelocity: 0 60 0; blending: additive"
+            sprite-particles__smoke="texture: url(assets/fog.png); velocity: -.1 1 -.3.. .3 1 .3; spawnRate: 12; lifeTime: 4; scale: 4,8; opacity: 0,1,0; color: #666,#222; rotation: -120..120"
+            sprite-particles__fire="texture: url(assets/explosion_sheet.png); textureFrame: 5 5; velocity: .2 .1 -.2.. .6 .1 .2; acceleration: 0 1 0..0 3 0; spawnRate: 15; scale: 2..4,6..8; opacity: 1,0; angularVelocity: 0 60 0; blending: additive"
             sprite-particles__sparks="color: yellow, red; spawnRate: 10; lifeTime: 0.3..0.7; velocity: 0 2.5..0 4.5; angularVelocity: -50 0 -50..50 0 50; scale: .1...4"></a-entity>
           <a-text value="multiple particles" mixin="label"></a-text>
         </a-entity>
@@ -260,23 +260,23 @@
           <a-text value="newest + burst" mixin="label"></a-text>
         </a-entity>
         <a-entity position="-20 4 0">
-          <a-entity sprite-particles="texture: assets/explosion_sheet.png; textureFrame: 5 5; trailInterval: .5; trailLifeTime: 2; spawnType: burst; velocity: -0.3 0.5 0..0.3 0.5 0; angularVelocity: 0 -60 0..0 60 0; spawnRate: 0.5; lifeTime: 3; opacity: 1,0; rotation: -12..12; particleSize: 500"></a-entity>
+          <a-entity sprite-particles="texture: url(assets/explosion_sheet.png); textureFrame: 5 5; trailInterval: .5; trailLifeTime: 2; spawnType: burst; velocity: -0.3 0.5 0..0.3 0.5 0; angularVelocity: 0 -60 0..0 60 0; spawnRate: 0.5; lifeTime: 3; opacity: 1,0; rotation: -12..12; particleSize: 500"></a-entity>
           <a-text value="unordered + burst" mixin="label"></a-text>
         </a-entity>
         <a-entity position="-24 4 0">
-          <a-entity sprite-particles="particleOrder: oldest; texture: assets/explosion_sheet.png; textureFrame: 5 5; trailInterval: .5; trailLifeTime: 2; spawnType: burst; velocity: -0.3 0.5 0..0.3 0.5 0; angularVelocity: 0 -60 0..0 60 0; spawnRate: 0.5; lifeTime: 3; opacity: 1,0; rotation: -12..12; particleSize: 500"></a-entity>
+          <a-entity sprite-particles="particleOrder: oldest; texture: url(assets/explosion_sheet.png); textureFrame: 5 5; trailInterval: .5; trailLifeTime: 2; spawnType: burst; velocity: -0.3 0.5 0..0.3 0.5 0; angularVelocity: 0 -60 0..0 60 0; spawnRate: 0.5; lifeTime: 3; opacity: 1,0; rotation: -12..12; particleSize: 500"></a-entity>
           <a-text value="oldest + burst" mixin="label"></a-text>
         </a-entity>
         <a-entity position="-16 8 0">
-          <a-entity sprite-particles="particleOrder: newest; texture: assets/explosion_sheet.png; textureFrame: 5 5; trailInterval: .5; trailLifeTime: 6; velocity: -0.3 0.5 0..0.3 0.5 0; angularVelocity: 0 -60 0..0 60 0; spawnRate: 0.5; lifeTime: 3; opacity: 1,0; rotation: -12..12; particleSize: 500"></a-entity>
+          <a-entity sprite-particles="particleOrder: newest; texture: url(assets/explosion_sheet.png); textureFrame: 5 5; trailInterval: .5; trailLifeTime: 6; velocity: -0.3 0.5 0..0.3 0.5 0; angularVelocity: 0 -60 0..0 60 0; spawnRate: 0.5; lifeTime: 3; opacity: 1,0; rotation: -12..12; particleSize: 500"></a-entity>
           <a-text value="newest" mixin="label"></a-text>
         </a-entity>
         <a-entity position="-20 8 0">
-          <a-entity sprite-particles="texture: assets/explosion_sheet.png; textureFrame: 5 5; trailInterval: .5; trailLifeTime: 6; velocity: -0.3 0.5 0..0.3 0.5 0; angularVelocity: 0 -60 0..0 60 0; spawnRate: 0.5; lifeTime: 3; opacity: 1,0; rotation: -12..12; particleSize: 500"></a-entity>
+          <a-entity sprite-particles="texture: url(assets/explosion_sheet.png); textureFrame: 5 5; trailInterval: .5; trailLifeTime: 6; velocity: -0.3 0.5 0..0.3 0.5 0; angularVelocity: 0 -60 0..0 60 0; spawnRate: 0.5; lifeTime: 3; opacity: 1,0; rotation: -12..12; particleSize: 500"></a-entity>
           <a-text value="unordered" mixin="label"></a-text>
         </a-entity>
         <a-entity position="-24 8 0">
-          <a-entity sprite-particles="particleOrder: oldest; texture: assets/explosion_sheet.png; textureFrame: 5 5; trailInterval: .5; trailLifeTime: 6; velocity: -0.3 0.5 0..0.3 0.5 0; angularVelocity: 0 -60 0..0 60 0; spawnRate: 0.5; lifeTime: 3; opacity: 1,0; rotation: -12..12; particleSize: 500"></a-entity>
+          <a-entity sprite-particles="particleOrder: oldest; texture: url(assets/explosion_sheet.png); textureFrame: 5 5; trailInterval: .5; trailLifeTime: 6; velocity: -0.3 0.5 0..0.3 0.5 0; angularVelocity: 0 -60 0..0 60 0; spawnRate: 0.5; lifeTime: 3; opacity: 1,0; rotation: -12..12; particleSize: 500"></a-entity>
           <a-text value="oldest" mixin="label"></a-text>
         </a-entity>
         <a-entity position="-20 0 0">
@@ -355,23 +355,23 @@
           <a-text value="short ribbon" mixin="label"></a-text>
         </a-entity>
         <a-entity position="-12 -12 0">
-          <a-entity sprite-particles="texture: assets/numbered_2x2_64x64.jpg; velocity: 0.5 0 0; position: -0.75 0 0; lifeTime: 4; spawnRate: .1; trailInterval: 0.2; trailType: ribbon; ribbonWidth: 20"></a-entity>
+          <a-entity sprite-particles="texture: url(assets/numbered_2x2_64x64.jpg); velocity: 0.5 0 0; position: -0.75 0 0; lifeTime: 4; spawnRate: .1; trailInterval: 0.2; trailType: ribbon; ribbonWidth: 20"></a-entity>
           <a-text value="textured ribbon" mixin="label"></a-text>
         </a-entity>
         <a-entity position="-16 -12 0">
-          <a-entity sprite-particles="texture: assets/frame.png; velocity: -0.5 1 0..0.5 1 0; acceleration: 0 -0.5 0; lifeTime: 4..6; color: yellow, red; spawnRate: 1; ribbonUVType: interval; trailInterval: 0.1; trailType: ribbon; ribbonWidth: 2"></a-entity>
+          <a-entity sprite-particles="texture: url(assets/frame.png); velocity: -0.5 1 0..0.5 1 0; acceleration: 0 -0.5 0; lifeTime: 4..6; color: yellow, red; spawnRate: 1; ribbonUVType: interval; trailInterval: 0.1; trailType: ribbon; ribbonWidth: 2"></a-entity>
           <a-text value="textured interval" mixin="label"></a-text>
         </a-entity>
         <a-entity position="-20 -12 0">
-          <a-entity sprite-particles="texture: assets/numbered_2x2_64x64.jpg; velocity: 0.5 0 0; position: -0.75 0 0; lifeTime: 4; spawnRate: .1; trailInterval: 0.2; trailType: ribbon3D; materialSide: double; ribbonWidth: 1"></a-entity>
+          <a-entity sprite-particles="texture: url(assets/numbered_2x2_64x64.jpg); velocity: 0.5 0 0; position: -0.75 0 0; lifeTime: 4; spawnRate: .1; trailInterval: 0.2; trailType: ribbon3D; materialSide: double; ribbonWidth: 1"></a-entity>
           <a-text value="textured ribbon3D" mixin="label"></a-text>
         </a-entity>
         <a-entity position="-24 -12 0">
-          <a-entity sprite-particles="texture: assets/frame.png; velocity: -0.5 1 0..0.5 1 0; acceleration: 0 -0.5 0; lifeTime: 4..6; color: yellow, red; spawnRate: 1; ribbonUVType: interval; trailInterval: 0.1; trailType: ribbon3D; materialSide: double; ribbonWidth: 0.1"></a-entity>
+          <a-entity sprite-particles="texture: url(assets/frame.png); velocity: -0.5 1 0..0.5 1 0; acceleration: 0 -0.5 0; lifeTime: 4..6; color: yellow, red; spawnRate: 1; ribbonUVType: interval; trailInterval: 0.1; trailType: ribbon3D; materialSide: double; ribbonWidth: 0.1"></a-entity>
           <a-text value="ribbon3D interval" mixin="label"></a-text>
         </a-entity>
         <a-entity position="-28 -12 0">
-          <a-entity sprite-particles="texture: assets/frame.png; position: -0.75 0 0; velocity: 0.5 0 0; lifeTime: 4; color: yellow, red; spawnRate: 0.1; ribbonUVType: interval; trailInterval: 0.1; trailType: ribbon3D; materialSide: double; rotation: 0,360"></a-entity>
+          <a-entity sprite-particles="texture: url(assets/frame.png); position: -0.75 0 0; velocity: 0.5 0 0; lifeTime: 4; color: yellow, red; spawnRate: 0.1; ribbonUVType: interval; trailInterval: 0.1; trailType: ribbon3D; materialSide: double; rotation: 0,360"></a-entity>
           <a-text value="ribbon3D rotation" mixin="label"></a-text>
         </a-entity>
         <a-entity position="16 -12 0">
